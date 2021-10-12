@@ -47,5 +47,5 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - This helped me to lear flexbox concepts. 
+- [CSS3 properties](https://css-tricks.com/almanac/properties/) - A list with common CSS3 properties.

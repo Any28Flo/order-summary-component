@@ -1,1 +1,20 @@
 /*Here goes your css code*/
+:root{
+    --fontBase: 'Red Hat Display', sans-serif;
+    --headLine1: bold 28px/37px var(--fontBase);
+    --body1: bold 16px/22px var(--fontBase);
+    --body2: bold 16px/22px var(--fontBase);
+    --body3: bold 16px/26px var(--fontBase);
+    --pale-blue: hsl(225, 100%, 94%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --desaturated-blue:  hsl(224, 23%, 55%) ;
+    --dark-blue:hsl(223, 47%, 23%) ;
+}
+*{
+    margin: 0;
+}
+body{
+    background-color: var(--pale-blue);
+    font: var(--body1);
+}

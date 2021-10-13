@@ -1,20 +1,64 @@
 /*Here goes your css code*/
 :root{
     --fontBase: 'Red Hat Display', sans-serif;
-    --headLine1: bold 28px/37px var(--fontBase);
-    --body1: bold 16px/22px var(--fontBase);
+    --headLine1: 900 28px/37px var(--fontBase);
+    --body1: bold 1.6rem/22px var(--fontBase);
     --body2: bold 16px/22px var(--fontBase);
-    --body3: bold 16px/26px var(--fontBase);
+    --body3: 500 1.6rem/26px var(--fontBase);
     --pale-blue: hsl(225, 100%, 94%);
     --very-pale-blue: hsl(225, 100%, 98%);
     --bright-blue:hsl(245, 75%, 52%);
     --desaturated-blue:  hsl(224, 23%, 55%) ;
     --dark-blue:hsl(223, 47%, 23%) ;
+    --white:#fffff;
 }
 *{
     margin: 0;
 }
+html{
+    --font-size:10px;
+}
 body{
     background-color: var(--pale-blue);
     font: var(--body1);
+    min-block-size: 100vh;
 }
+/*order summary container*/
+.wrapper{
+    border: solid   1px black;
+    max-inline-size: 945px;
+    padding-inline-start:495px;
+    padding-inline-end:495px;
+}
+/*order summary container*/
+.order-summary-container{
+    border: solid 1px red;
+    border-radius: 20px;
+}
+/*order summary header*/
+.order-summary-header img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+/*order summary body*/
+.order-summary-body{
+    background-color: var(--white);
+}
+.order-summary-body h1{
+    font: var(--headLine1);
+}
+.order-summary-body p{
+    font: var(--body3);
+}
+
+/*movile*/
+
+/*.order-summary-container{*/
+/*    border: solid   1px black;*/
+/*    max-inline-size: 474px;*/
+/*    padding-inline-start:24px*/
+/*    padding-inline-end:24px*/
+
+/*}*/

@@ -4,13 +4,15 @@
     --headLine1: 900 28px/37px var(--fontBase);
     --body1: bold 1.6rem/22px var(--fontBase);
     --body2: bold 16px/22px var(--fontBase);
-    --body3: 500 1.6rem/26px var(--fontBase);
+    --body3: 500 1.2rem/26px var(--fontBase);
     --pale-blue: hsl(225, 100%, 94%);
     --very-pale-blue: hsl(225, 100%, 98%);
     --bright-blue:hsl(245, 75%, 52%);
     --desaturated-blue:  hsl(224, 23%, 55%) ;
     --dark-blue:hsl(223, 47%, 23%) ;
     --white:#fffff;
+    --pale-purple: #717FA6;
+    --purple: #1F2E55;
 }
 *{
     margin: 0;
@@ -23,7 +25,7 @@ body{
     font: var(--body1);
     min-block-size: 100vh;
 }
-/*order summary container*/
+/*wrapper*/
 .wrapper{
     border: solid   1px black;
     max-inline-size: 945px;
@@ -34,10 +36,14 @@ body{
 .order-summary-container{
     border: solid 1px red;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 /*order summary header*/
 .order-summary-header img{
     width: 100%;
+    height:auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -48,9 +54,17 @@ body{
 }
 .order-summary-body h1{
     font: var(--headLine1);
+    text-align: center;
+    color: var(--purple);
+    padding-block-start: 24px;
 }
 .order-summary-body p{
     font: var(--body3);
+    color: var(--pale-purple) ;
+    text-align: center;
+    margin-block-start: 17px;
+    padding-inline-start: 48px;
+    padding-inline-end: 48px;
 }
 
 /*movile*/

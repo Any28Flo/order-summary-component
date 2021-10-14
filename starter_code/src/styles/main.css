@@ -7,11 +7,12 @@
     --body3: 500 1.2rem/26px var(--fontBase);
     --body4: 900 1.6rem/21px var(--fontBase);
     --body5: bold 1.4rem/19px var(--fontBase);
+    --body6: 900 1.0rem/20px var(--fontBase);
     --pale-blue: hsl(225, 100%, 94%);
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue:  hsl(224, 23%, 55%) ;
     --dark-blue:hsl(223, 47%, 23%) ;
-    --white:#fffff;
+    --white:#FFFFFF;
     --pale-purple: #717FA6;
     --purple: #1F2E55;
     --gray: #F7F9FF;
@@ -27,6 +28,8 @@ body{
     background-color: var(--pale-blue);
     font: var(--body1);
     min-block-size: 100vh;
+    display: flex;
+    align-items: center;
 }
 /*wrapper*/
 .wrapper{
@@ -34,6 +37,9 @@ body{
     max-inline-size: 945px;
     padding-inline-start:495px;
     padding-inline-end:495px;
+    /*padding-block-start: 100px ;*/
+    /*padding-block-end: 98px;*/
+
 }
 /*order summary container*/
 .order-summary-container{
@@ -101,6 +107,26 @@ body{
     color: var(--bright-blue);
     align-self: center;
 }
+/*button*/
+button{
+    display: block;
+    width: 100%;
+    padding-block-start: 15px ;
+    padding-block-end: 15px;
+    padding-inline-start: 102px;
+    padding-inline-end: 102px;
+    border-radius: 11px;
+    border: 0;
+    font: var(--body6);
+    color: var(--pale-purple);
+
+}
+.active{
+    background-color: var(--bright-blue);
+    color: var(--white);
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
 /*movile*/
 
 /*.order-summary-container{*/

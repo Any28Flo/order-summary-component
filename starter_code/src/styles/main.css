@@ -126,7 +126,10 @@ button{
     color: var(--white);
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
 }
-
+.order-summary-footer button:nth-child(2){
+    margin-block-start: 32px;
+    border: solid 1px red;
+}
 /*movile*/
 
 /*.order-summary-container{*/

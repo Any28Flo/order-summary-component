@@ -59,6 +59,8 @@ body{
 /*order summary body*/
 .order-summary-body{
     background-color: var(--white);
+    padding-inline-start:25px;
+    padding-inline-end:25px;
 }
 .order-summary-body h1{
     font: var(--headLine1);
@@ -82,8 +84,8 @@ body{
     border-radius: 11px;
     padding-inline-start: 24px;
     padding-inline-end: 24px;
-    padding-block-start: 25px;
-    padding-block-end: 25px;
+    /*padding-block-start: 25px;*/
+    /*padding-block-end: 25px;*/
     justify-content: space-between;
 }
 .plan-description-image{
@@ -128,7 +130,6 @@ button{
 }
 .order-summary-footer button:nth-child(2){
     margin-block-start: 32px;
-    border: solid 1px red;
 }
 /*movile*/
 

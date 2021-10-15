@@ -7,7 +7,7 @@
     --body3: 500 1.2rem/26px var(--fontBase);
     --body4: 900 1.6rem/21px var(--fontBase);
     --body5: bold 1.4rem/19px var(--fontBase);
-    --body6: 900 1.0rem/20px var(--fontBase);
+    --body6: 900 1.0rem/15px var(--fontBase);
     --pale-blue: hsl(225, 100%, 94%);
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue:  hsl(224, 23%, 55%) ;
@@ -22,7 +22,7 @@
     margin: 0;
 }
 html{
-    --font-size:10px;
+    font-size:10px;
 }
 body{
     background-color: var(--pale-blue);
@@ -33,18 +33,15 @@ body{
 }
 /*wrapper*/
 .wrapper{
-    border: solid   1px black;
-    max-inline-size: 945px;
-    padding-inline-start:495px;
-    padding-inline-end:495px;
-    /*padding-block-start: 100px ;*/
-    /*padding-block-end: 98px;*/
-
+    max-inline-size: 45rem;
+    /*padding-inline-start:495px;*/
+    /*padding-inline-end:495px;*/
+    padding-inline-start:2.4rem;
+    padding-inline-end:2.4rem;
 }
 /*order summary container*/
 .order-summary-container{
-    border: solid 1px red;
-    border-radius: 20px;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -52,45 +49,43 @@ body{
 /*order summary header*/
 .order-summary-header img{
     width: 100%;
-    height:auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height:100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 /*order summary body*/
 .order-summary-body{
     background-color: var(--white);
-    padding-inline-start:25px;
-    padding-inline-end:25px;
+    padding-inline-start:2.5rem;
+    padding-inline-end:2.5rem;
 }
 .order-summary-body h1{
     font: var(--headLine1);
     text-align: center;
     color: var(--purple);
-    padding-block-start: 24px;
+    padding-block-start: 2.4rem;
 }
 .order-summary-body p{
     font: var(--body3);
     color: var(--pale-purple) ;
     text-align: center;
-    margin-block-start: 17px;
-    padding-inline-start: 48px;
-    padding-inline-end: 48px;
+    margin-block-start: 1.7rem;
+    padding-inline-start: 4.8rem;
+    padding-inline-end: 4.8rem;
 }
 /*order-summary-description*/
 .order-summary-plan-description{
     display: flex;
     flex-direction: row;
     background-color: var(--gray);
-    border-radius: 11px;
-    padding-inline-start: 24px;
-    padding-inline-end: 24px;
-    /*padding-block-start: 25px;*/
-    /*padding-block-end: 25px;*/
+    border-radius: 1rem;
+    padding-inline-start: 2.4rem;
+    padding-inline-end: 2.4rem;
     justify-content: space-between;
 }
 .plan-description-image{
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
 }
 .plan-description-image img{
     width: 100%;
@@ -102,7 +97,7 @@ body{
     font: var(--body3);
     color: var(--pale-purple);
     padding: 0;
-    margin-block-start: 6px;
+    margin-block-start: .6rem;
 }
 .plan-description-button{
     font: var(--body5);
@@ -113,15 +108,17 @@ body{
 button{
     display: block;
     width: 100%;
-    padding-block-start: 15px ;
-    padding-block-end: 15px;
-    padding-inline-start: 102px;
-    padding-inline-end: 102px;
-    border-radius: 11px;
+    padding-block-start: 1.5rem ;
+    padding-block-end: 1.5rem;
+    padding-inline-start: 10.2rem;
+    padding-inline-end: 10.2rem;
+    border-radius: 1.1rem;
     border: 0;
     font: var(--body6);
     color: var(--pale-purple);
-
+}
+button:hover{
+    cursor: pointer;
 }
 .active{
     background-color: var(--bright-blue);
@@ -129,7 +126,7 @@ button{
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
 }
 .order-summary-footer button:nth-child(2){
-    margin-block-start: 32px;
+    margin-block-start: 3.2rem;
 }
 /*movile*/
 

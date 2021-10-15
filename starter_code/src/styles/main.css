@@ -127,6 +127,7 @@ button:hover{
 }
 .order-summary-footer button:nth-child(2){
     margin-block-start: 3.2rem;
+    margin-block-end: 4.8rem;
 }
 /*movile*/
 

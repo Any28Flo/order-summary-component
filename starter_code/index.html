@@ -8,35 +8,41 @@
     <link rel="stylesheet" href="./src/styles/main.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <!-- <img src="./src/images/favicon-32x32.png" alt=""> --><!--No sé que es--> 
     <!-- <img src="./src/images/pattern-background-desktop.svg" alt=""> backcompleto -->
     <!-- <img src="./src/images/pattern-background-mobile.svg" alt=""> backonda  -->
-    
-    
-    <section>
-        <div>
-            <img src="./src/images/illustration-hero.svg" alt="portada"> 
+ 
+    <section id="card">
+        <div class="card_img">
+            <img src="./src/images/illustration-hero.svg" alt="portada" class="card_img"> 
         </div><!--divheader-->
         
-        <div>
+        <div class="card_text">
             <h2>Order summary</h2>
             <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
             
-            <div>
-                <img src="./src/images/icon-music.svg" alt="icon-music"> 
-                <h4>Annual Plan</h4>
-                <p>$59.99/year</p>
-                <a href="#" class="enlace">Change</a>
-                </div><!--Annual Plan-->
-    
-            <button class="button">Proceed to Payment</button>
-            <a href="#" class="cancel">Cancel Order</a>
+            <div class = 'card_plan' >
+                <img src="./src/images/icon-music.svg" alt="icon-music" class="card_plan-img"> 
+                <div class="card_plan-txt">
+                    <h4>Annual Plan</h4>
+                    <p>$59.99/year</p>   
+                </div>
+                <a href="#" class="card_plan-enlace">Change</a>
+            </div><!--Annual Plan-->
         </div>
+
+        <div class="card_botones">
+            <button class="card_botones-button">Proceed to Payment</button>
+            <a href="#" class="card_botones-cancel">Cancel Order</a>
+        </div>
+
     </section><!--Section order-->
+
 
 </body>
 </html>

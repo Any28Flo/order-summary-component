@@ -1,5 +1,8 @@
 /*Here goes your css code*/
 
+@import url(./cardPlan.css);
+@import url(./cardBotones.css);
+
 
 :root{
     --fontBase: 'Red Hat Display', sans-serif;;
@@ -7,138 +10,46 @@
     --colorOsc: #1F2E55;
     --colorGray: #717FA6;
     --colorBlue: #382AE1;
-
+    --coloHover: #766CF1;
 }
 
-*{
+body{
     background-color:var(--colorBack);
     font-family: var(--fontBase);
     font-size: 10px;
-    /* background-color: red; */
+    background-color:#a4b0d1;
 }
 
-#card{
-    width: 45em;
-    height: 90em;
-    /* background-color: #fff; */
+.card__styles--position{
     position: fixed;
-    top: 10.2em;
-    left: 49.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    top: 5em;
+    left: 40%;
+    border-radius: 1em;    
 }
 
-.card_img{
-    width: 45em;
-    height: 22em;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
+.card__styles--img{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
-.card_text{
-    font-family: var(--fontBase);
+.card-body h2{
+    margin: 0;
+    padding: 0.3em 0 0 0;
+    font-size: 2.2em;
     text-align: center;
-    background-color: #fff;
-    margin-bottom: 0;
-}
-
-.card_text h2{
-    margin: 0em 0 0 0;
-    padding: 1.5em 0 0 0;
-    font-size: 2.8em;
-    font-weight: 900;
-    color: var(--colorOsc);
-    background-color: #fff;
-}
-
-.card_text p{
-    width: auto;
-    padding: 1.5em 3em 0em ;
-    margin: 0em;
-    font-size: 1.6em;
-    font-weight: 500;
-    color: var(--colorGray);
-    background-color: #fff;
-}
-
-.card_plan{
- 
-    margin: 2em;
-    margin-left: 2em;
-    margin-right: 3em;
-    width: 35em;
-    height: 9.8em;
-    display: flex;
-    flex-direction: row;
-    padding: 0em 3em 0 3em;
-    border-radius: 2em;
-    gap: 2em;
-    align-items: center;
-}
-
-.card_plan-img{
-    width: 4.8em;
-    height: 4.8em;
-}
-
-.card_plan-txt{
-    font-family: var(--fontBase);
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}   
-
-.card_plan-txt h4{
-    margin: 0;
-    font-size: 1.6em;
     font-weight: 900;
     color: var(--colorOsc);
 }
 
-.card_plan-txt p{
-    padding: 0;
-    margin: 0;
-    font-size: 1.6em;
-    font-weight: 500;
-    color: var(--colorGray);
-    background-color:var(--colorBack);
-}
-
-
-.card_plan-enlace{
-    padding-left: 8em;
-    color: var(--colorBlue);
-    font-family: var(--fontBase);
+.card-body p{
+    
+    margin-top: 1em;
+    padding: 0 1em;
+    text-align: center;
     font-size: 1.4em;
-    font-weight: 700;
-    display: flex   ;
-    justify-content: flex-end;
-}
-
-.card_botones{
-
-    font-family: var(--fontBase);
-    font-size: 1.5em;
-    font-weight: 900;   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card_botones-button{
-    background-color:var(--colorBlue);
-    color: #fff;
-    width: 35.4em;
-    height: 5em;
-    border-radius: 2em;
-}
-
-.card_botones-cancel{
+    font-weight: 500;
     color: var(--colorGray);
-    text-decoration: none;
+    background-color: #fff;
 }
-
 
 

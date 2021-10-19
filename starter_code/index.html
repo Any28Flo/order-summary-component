@@ -1,48 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order summary component</title>
+    <title>Order Summary Component</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Boot-->
+
+
     <link rel="stylesheet" href="./src/styles/main.css" type="text/css">
+    <!--CSS-->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!--Font-->
     
 </head>
-
 <body>
-    <!-- <img src="./src/images/favicon-32x32.png" alt=""> --><!--No sé que es--> 
-    <!-- <img src="./src/images/pattern-background-desktop.svg" alt=""> backcompleto -->
-    <!-- <img src="./src/images/pattern-background-mobile.svg" alt=""> backonda  -->
- 
-    <section id="card">
-        <div class="card_img">
-            <img src="./src/images/illustration-hero.svg" alt="portada" class="card_img"> 
-        </div><!--divheader-->
-        
-        <div class="card_text">
-            <h2>Order summary</h2>
-            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-            
-            <div class = 'card_plan' >
-                <img src="./src/images/icon-music.svg" alt="icon-music" class="card_plan-img"> 
-                <div class="card_plan-txt">
-                    <h4>Annual Plan</h4>
-                    <p>$59.99/year</p>   
-                </div>
-                <a href="#" class="card_plan-enlace">Change</a>
-            </div><!--Annual Plan-->
-        </div>
 
-        <div class="card_botones">
-            <button class="card_botones-button">Proceed to Payment</button>
-            <a href="#" class="card_botones-cancel">Cancel Order</a>
-        </div>
+    <main class="container">
+        <div class="row justify-content-center align-self-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="card card__styles--position" style="width: 20rem;">
+                    <img src="./src/images/illustration-hero.svg" class="card-img-top card__styles--img" alt="...">
+                    <div class="card-body">
+                        <h2>Order Summary</h2>
+                        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+                        
+                        <div class = 'card_plan' >
+                            <img src="./src/images/icon-music.svg" alt="icon-music" class="card_plan-img"> 
+                            <div class="card_plan-txt">
+                                <h4>Annual Plan</h4>
+                                <h3 class="card_plan-txt--p">$59.99/year</h3>   
+                            </div> <!--Annual Plan txt-->
+                            <a href="#" class="card_plan-enlace">Change</a>
+                        </div><!--Annual Plan-->
+                        
+                        <div class="card_botones">
+                            <button type="button" class="btn btn-primary card_botones-button">Proceed to Payment</button>
+                            <a href="#" class="card_botones-cancel">Cancel Order</a>
+                        </div> <!--btns end-->
 
-    </section><!--Section order-->
+                    </div><!--card body-->
+                </div><!--card-->
+            </div> <!--col-->
+        </div> <!--row-->
+    </main>  <!--man container-->
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
 </html>

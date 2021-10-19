@@ -1,0 +1,49 @@
+.card_plan{
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2em;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F7F9FF;
+}
+
+.card_plan-img{
+    width: 4em;
+    height: 4em;
+   
+}
+
+.card_plan-txt h4{
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: var(--colorOsc);
+}
+
+.card_plan-txt--p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--colorGray);
+    background-color:#F7F9FF;
+}
+
+.card_plan-enlace{
+    padding-left: 6em;
+    color: var(--colorBlue);
+    font-family: var(--fontBase);
+    font-size: 1.2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card_plan-enlace:hover{
+    color: var(--coloHover);
+    text-decoration: none;
+}

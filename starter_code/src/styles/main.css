@@ -21,9 +21,10 @@ body{
 }
 
 .card__styles--position{
-    position: fixed;
+    /* position: relative;
     top: 5em;
-    left: 40%;
+    left: 40%; */
+    margin-top: 5em;
     border-radius: 1em;    
 }
 

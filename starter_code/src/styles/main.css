@@ -4,10 +4,10 @@
     --headLine1: 900 28px/37px var(--fontBase);
     --body1: bold 1.6rem/22px var(--fontBase);
     --body2: 500 1.6rem/21px var(--fontBase);
-    --body3: 500 1.2rem/26px var(--fontBase);
+    --body3: 500 1.6rem/26px var(--fontBase);
     --body4: 900 1.6rem/21px var(--fontBase);
     --body5: bold 1.4rem/19px var(--fontBase);
-    --body6: 900 1.0rem/15px var(--fontBase);
+    --body6: 900 1.5rem/2.0rem var(--fontBase);
     --pale-blue: hsl(225, 100%, 94%);
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue:  hsl(224, 23%, 55%) ;
@@ -18,46 +18,45 @@
     --gray: #F7F9FF;
     --bright-blue: #382AE1;
 }
-*{
+*,
+*::after,
+*::before{
     margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 html{
     font-size:10px;
 }
+@media screen and (max-width: 700px){
+    html{
+        font-size: 9px;
+    }
+
+}
 body{
-    background-color: var(--pale-blue);
+    box-sizing: border-box;
     font: var(--body1);
     min-block-size: 100vh;
     display: flex;
     align-items: center;
-}
-/*wrapper*/
-.wrapper{
-    max-inline-size: 45rem;
-    padding-inline-start:49.5rem;
-    padding-inline-end:49.5rem;
-    /*mobile wrapper*/
+    justify-content: center;
+
 
 }
-@media screen and (max-width: 600px) {
-    .wrapper{
-        border: 1px solid red;
-        padding-inline-start:2.4rem;
-        padding-inline-end:2.4rem;
-    }
+.wrapper-img{
+
+    /*background-image: url("./../images/pattern-background-desktop.svg");*/
 
 }
-    /*@media screen(max-width:600{*/
-/*    .wrapper{*/
-/*        */
-/*    }*/
-/*}*/
+
 /*order summary container*/
 .order-summary-container{
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0;
+    max-inline-size: 45rem;
 }
 /*order summary header*/
 .order-summary-header img{
@@ -149,12 +148,4 @@ button:hover{
     margin-block-start: 3.2rem;
     margin-block-end: 4.8rem;
 }
-/*mobile*/
 
-/*.order-summary-container{*/
-/*    border: solid   1px black;*/
-/*    max-inline-size: 474px;*/
-/*    padding-inline-start:24px*/
-/*    padding-inline-end:24px*/
-
-/*}*/

@@ -1,0 +1,9 @@
+
+
+.back__img{
+    position: absolute;
+    /* z-index: 1; */
+    left: -0.2em;
+    height: 30em;
+    width: 100%;    
+}

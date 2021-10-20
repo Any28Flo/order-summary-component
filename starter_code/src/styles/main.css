@@ -1,5 +1,6 @@
 /*Here goes your css code*/
 
+@import url(./back.css);
 @import url(./cardPlan.css);
 @import url(./cardBotones.css);
 
@@ -21,9 +22,10 @@ body{
 }
 
 .card__styles--position{
-    /* position: relative;
-    top: 5em;
-    left: 40%; */
+    position: absolute;
+    /* top: 30px; */
+    /* left: 40px; */
+    z-index: 2;
     margin-top: 5em;
     border-radius: 1em;    
 }

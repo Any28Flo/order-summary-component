@@ -1,1 +1,58 @@
 /*Here goes your css code*/
+
+@import url(./back.css);
+@import url(./cardPlan.css);
+@import url(./cardBotones.css);
+
+
+:root{
+    --fontBase: 'Red Hat Display', sans-serif;;
+    --colorBack: #F2F2F2;   
+    --colorOsc: #1F2E55;
+    --colorGray: #717FA6;
+    --colorBlue: #382AE1;
+    --coloHover: #766CF1;
+}
+
+body{
+    background-color:var(--colorBack);
+    font-family: var(--fontBase);
+    font-size: 10px;
+    background-color:#a4b0d1;
+}
+
+.card__styles--position{
+    position: absolute;
+    /* top: 30px; */
+    /* left: 40px; */
+    z-index: 2;
+    margin-top: 5em;
+    border-radius: 1em;    
+}
+
+.card__styles--img{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.card-body h2{
+    margin: 0;
+    padding: 0.3em 0 0 0;
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 900;
+    color: var(--colorOsc);
+}
+
+.card-body p{
+    
+    margin-top: 1em;
+    padding: 0 1em;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--colorGray);
+    background-color: #fff;
+}
+
+
